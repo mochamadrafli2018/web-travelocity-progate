@@ -1,110 +1,177 @@
 body {
-    margin: 0;
-    font-family: Georgia, serif;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, serif;
+}
   
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
+
+header{
+  margin:0px auto;
+  padding:0px;
+  width:100%;
+}
+main{
+  margin:0px auto;
+  padding:0px;
+  width:100%;
+}
+footer{  
+  margin:0px auto;
+  padding:0px;
+  width:100%;
+}
+
+
+/*Navbar CSS*/
+nav {
+  border: 2px solid red;
+  background-color: rgba(34, 49, 52, 0.9);
+  display:flex;
+  flex-direction:row;
+  padding: 10px 0px;
+  margin: 0 auto;
+  top: 0;
+  z-index:10;
+  width: 100%;
+}
   
-  .container {
-    width: 1170px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
+.nav-right {
+  display:flex;
+  flex-direction:row;
+  margin-left: auto;
+  margin-right: 15px;
+  transition: all 0.5s;
+}
   
-  .top-wrapper {
-    padding: 180px 0 100px 0;
-    background-image: url(https://www.caterease.co.uk/wp-content/uploads/2019/01/City-Tour-Background.png);
-    background-size: cover;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    
-  }
+.nav-right a {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  display: block;
+  margin:0px 5px;
+  line-height: 65px;
+  padding: 0 25px;
+}
+ 
+.nav-right a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-logo {
+  width: 124px;
+  margin: 20px;
+}
+
+/*Header Image and Title*/
+.top-wrapper {
+  border: 2px solid red;
+  background-image: url(https://www.caterease.co.uk/wp-content/uploads/2019/01/City-Tour-Background.png);
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  margin: 0px auto;
+  padding: 180px 0 100px 0;
+  text-align: center;    
+  width:100%;
+}
   
-  .top-wrapper h1 {
-    opacity: 0.7;
-    font-size: 45px;
-    letter-spacing: 5px;
-    margin-bottom: 10px;
-  }
+.top-wrapper h1 {
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
   
-  .top-wrapper p {
-    opacity: 0.7;
-    margin-bottom: 3px;
-  }
+.top-wrapper p {
+  opacity: 0.8;
+  margin-bottom: 3px;
+}
   
-  .btn-wrapper {
-    margin: 20px 0;
-  }
+.btn-wrapper {
+  margin: 20px 0;
+}
   
-  .btn-wrapper p {
-    margin: 10px 0;
-  }
+.btn-wrapper p {
+  margin: 10px 0;
+}
   
-  .signup {
-    background-color: #239b76;
-  }
+.signup {
+  background-color: #239b76;
+}
   
-  .price {
-    background-color: #3b5998;
-    margin-right: 10px;
-  }
+.price {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
   
-  .package {
-    background-color: #55acee;
-  }
+.package {
+  background-color: #55acee;
+}
   
-  .btn {
-    padding: 12px 24px;
-    color: white;
-    display: inline-block;
-    opacity: 0.8;
-    border-radius: 4px;
-  }
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
   
-  .btn:hover {
-    opacity: 1;
-  }
+.btn:hover {
+  opacity: 1;
+}
   
-  .fa {
-    margin-right: 5px;
-  }
+.fa {
+  margin-right: 5px;
+}
   
-  header {
-    height: 65px;
-    width: 100%;
-    background-color: rgba(34, 49, 52, 0.9);
-    /* Change the position property to fixed, and top property to 0 */
-    position: fixed;
-    top: 0;
-    /* Change the z-index property to 10 */
-    z-index: 10;
-  }
-  
-  .logo {
-    width: 124px;
-    margin-top: 20px;
-  }
-  
-  .header-left {
-    float: left;
-  }
-  
-  .header-right {
-    float: right;
-    background-color: rgba(255, 255, 255, 0.3);
-    transition: all 0.5s;
-  }
-  
-  .header-right:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-  
-  .header-right a {
-    line-height: 65px;
-    padding: 0 25px;
-    color: white;
-    display: block;
-  }
-  
+/* Message Box CSS */
+.message-box {  
+  border: 2px solid red;
+  margin: 0 auto;
+  padding: 50px 0px 50px 0px;
+  width:100%;
+}
+.message-container {
+  border: 2px solid red;
+  margin: 0 auto;
+  padding: 10px;
+  width:95%;
+}
+.message-container input, textarea{
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+}
+.message-submit{
+  background-color: #dee7ec;
+  color: #889eab;
+}
+
+/*Footer CSS*/
+.footer {
+  border: 2px solid red;
+  background-color: rgba(34, 49, 52, 0.9);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0px;
+  margin:0px auto;
+  width: 100%;
+}
+
+.footer-heading {
+  font-size: 22px;
+  margin-left: 15px;
+}
+
+.footer-list {
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.footer-list p {
+  margin-bottom: 25px;
+}
