@@ -207,3 +207,13 @@ nav {
 .footer-list p {
   margin-bottom: 25px;
 }
+
+@media screen and (max-width: 480px) {
+  .content-container {
+    display:flex;
+    flex-direction:column;
+  }
+  .top-wrapper h1 {
+    font-size: 35px;
+  }
+}
